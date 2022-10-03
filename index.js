@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 8000;
-const APIVERSION1 = require("./api/api-v1");
+const APIVERSION1 = require("/api/api-v1");
 const mongoose = require("mongoose");
 const { swaggerDocs: V1SwaggerDocs} = require( "./swagger")
 
