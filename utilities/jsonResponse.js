@@ -8,6 +8,9 @@ class JSONResponse {
     }
     
     static error(res, message = "error", error, status) {
+      if(error.message){
+         error = error.message;
+      }
        res.status(status ?? res.statusCode).json({
           message,
           error,
